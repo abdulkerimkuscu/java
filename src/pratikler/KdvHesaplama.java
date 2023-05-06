@@ -1,4 +1,4 @@
-package odevler;
+package pratikler;
 
 
 import java.util.Scanner;
