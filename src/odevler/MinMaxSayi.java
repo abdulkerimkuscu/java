@@ -17,11 +17,11 @@ public class MinMaxSayi {
             System.out.print(i + ". Sayıyı Giriniz: ");
             number = input.nextInt();
 
-            //Burada veya min değer 0 a eşittiri koymadığımızda en küçük sayı her zaman yukarıda tanımladığımız gibi 0 oluyor
+            //Burada veya min değer 0 a eşittiri koymadığımızda en küçük sayı her zaman yukarıda tanımladığımız gibi 0 oluyor.
             if ((number < min) || (min == 0)) {
                 min = number;
             }
-            //Girilen sayı tanımlanan max değerden büyükse max değişkeni girilen sayı atanıyor.
+            //Girilen sayı tanımlanan max değerden büyükse max değişkenine girilen sayı atanıyor.
             if (number > max) {
                 max = number;
             }
