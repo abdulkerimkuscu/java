@@ -13,7 +13,8 @@ public class ArtikYil {
         //Bu yüzden yılın 4 e bölümünden kalan 0 olmalı veya 400 e bölümünden kalan 0 olmalı
         /*Ancak 4 e ve 100 e bölünüp 400 e bölünememesi için 100 e bölmünden kalanın 0 a eşit olmaması gerek
         Bu sebebple ilk koşul sağlanamadığı için false dönmeli ki hatalı sonuç almamalıyız.
-        Biraz karışık gibi gözüksede kodları incelerseniz dediğim anlaşılır :))))))
+        Biraz karışık gibi gözüksede kodları incelerseniz dediğim anlaşılır :)))))
+        Kodu inceleyip kafanızdan denerseniz çalışma mantığını anlayabilirsiniz.
          */
 
         if ((year % 4 == 0 && year % 100 !=0) || (year % 400 == 0)){
