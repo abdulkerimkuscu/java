@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ArtikYil {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Yıl Giriniz: ");
+        System.out.print("Yıl Giriniz: ");
         int year = input.nextInt();
 
         //Genel bir kural olarak, artık yıllar 4 rakamının katı olan yıllardır
