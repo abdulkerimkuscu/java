@@ -16,9 +16,9 @@ public class MukemmelSayi {
             }
         }
         if (total == n){
-            System.out.println(n + " Mükemmel Sayıdır!");
+            System.out.println(n + " Mükemmel Sayıdır!!!");
         }else {
-            System.out.println(n + " Mükemmel Sayı Değildir!");
+            System.out.println(n + " Mükemmel Sayı Değildir!!!");
 
         }
     }
