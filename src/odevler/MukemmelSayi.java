@@ -2,7 +2,7 @@ package odevler;
 
 import java.util.Scanner;
 
-public class MükemmelSayi {
+public class MukemmelSayi {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Bir Sayı Giriniz: ");
