@@ -9,8 +9,8 @@ public class MinMaxSayi {
         System.out.print("Girilecek Sayı Adedi: ");
         int n = input.nextInt();
 
-        int min = 0;
-        int max = 0;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         int number;
 
         for (int i = 1; i <= n; i++) {
@@ -18,7 +18,7 @@ public class MinMaxSayi {
             number = input.nextInt();
 
             //Burada veya min değer 0 a eşittiri koymadığımızda en küçük sayı her zaman yukarıda tanımladığımız gibi 0 oluyor.
-            if ((number < min) || (min == 0)) {
+            if (number < min) {
                 min = number;
             }
             //Girilen sayı tanımlanan max değerden büyükse max değişkenine girilen sayı atanıyor.
