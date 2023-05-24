@@ -21,5 +21,20 @@ public class SortingWithArrays {
         Arrays.sort(list);
         System.out.println("Küçükten Büyüğe Doğru Sıralanmış Dizi: " + Arrays.toString(list));
 
+        // *****İkinci Yol*****
+
+        int temp;
+        for (int i = 0; i < list.length; i++) {
+            for (int j = 1; j < i; j++) {
+                if (list[j] > list[i]) {
+                    temp = list[i];
+                    list[j - 1] = list[j];
+                    list[j] = temp;
+                }
+            }
+        }
+        System.out.print("Küçükten Büyüğe Doğru Sıralanmış Dizi: "+ Arrays.toString(list) );
+
+
     }
 }
