@@ -11,6 +11,7 @@ public class SortingWithArrays {
         int n = input.nextInt();
         int[] list = new int[n];
         System.out.print("Dizinin Elemanlarını Giriniz: ");
+
         //Dizinin içine elemanları yazdırmak için kullanılan for döngüsü
         for (int i = 0; i < n; i++) {
             list[i] = input.nextInt();
