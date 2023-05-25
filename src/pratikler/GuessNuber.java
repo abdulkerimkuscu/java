@@ -41,19 +41,19 @@ public class GuessNuber {
             } else {
                 if (selected > number) {
                     System.out.println(selected + " Gizli Sayıdan Büyük");
-                }else {
+                } else {
                     System.out.println(selected + " Gizli Sayıdan Küçük");
                 }
-                wrong[right++]= selected;
-                System.out.println("Kalan Hakkınız: " + (5- right));
+                wrong[right++] = selected;
+                System.out.println("Kalan Hakkınız: " + (5 - right));
             }
 
         }
-        if (!isWin){
+        if (!isWin) {
             System.out.println("Kaybettiniz");
-            if(!isWrong){
+            if (!isWrong) {
                 System.out.println("Tahmileriniz: " + Arrays.toString(wrong));
-        }
+            }
         }
 
 
