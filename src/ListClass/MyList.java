@@ -18,10 +18,12 @@ public class MyList<T> {
         }
         this.array = this.arrayTemp;
     }
-    public MyList(int capacity){
-        this.capacity=capacity;
+
+    public MyList(int capacity) {
+        this.capacity = capacity;
         this.setArray();
     }
+
     public MyList() {
         this.capacity = 10;
         this.setArray();
@@ -96,59 +98,60 @@ public class MyList<T> {
         this.array[index] = data;
     }
 
-    public int indexOf(T data){
-        for(int i = 0; i< this.array.length; i++){
-            if (data == this.array[i]){
+    public int indexOf(T data) {
+        for (int i = 0; i < this.array.length; i++) {
+            if (data == this.array[i]) {
                 return i;
             }
         }
         return -1;
     }
 
-    public int lastIndexOf(T data){
+    public int lastIndexOf(T data) {
         int lastIndex = -1;
-        for(int i = 0; i<this.array.length; i++){
-            if (data == this.array[i]){
+        for (int i = 0; i < this.array.length; i++) {
+            if (data == this.array[i]) {
                 lastIndex = i;
             }
         }
         return lastIndex;
     }
 
-    public boolean isEmpty(){
-        if (this.size() == 0){
+    public boolean isEmpty() {
+        if (this.size() == 0) {
             return true;
         }
         return false;
     }
 
-    public Object[] toArray(){
+    public Object[] toArray() {
         Object[] tempObj = new Object[this.array.length];
-        for (int i = 0; i< this.array.length; i++){
+        for (int i = 0; i < this.array.length; i++) {
             tempObj[i] = this.array[i];
         }
         return tempObj;
     }
 
-    public MyList<T> subList(int x, int y){
-        MyList<T> sub =new MyList<>(y-x+1);
-        for (int i=x;i<=y;i++){
-            sub.add((T)this.array[i]);
+    public MyList<T> subList(int x, int y) {
+        MyList<T> sub = new MyList<>(y - x + 1);
+        for (int i = x; i <= y; i++) {
+            sub.add((T) this.array[i]);
         }
         return sub;
     }
 
-    public boolean contains(T data){
-        for (int i=0;i<this.array.length;i++){
-            if (data ==this.array[i]){
+    public boolean contains(T data) {
+        for (int i = 0; i < this.array.length; i++) {
+            if (data == this.array[i]) {
                 return true;
             }
         }
         return false;
     }
-    public void clear(){
-        for (int i=0;i<this.array.length;i++){
-            this.array[i] =null;
+
+    public void clear() {
+        for (int i = 0; i < this.array.length; i++) {
+            this.array[i] = null;
         }
     }
 
